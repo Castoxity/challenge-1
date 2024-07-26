@@ -14,11 +14,82 @@ body{
 }
 
 .left{
-    width: 70%;
+    width: 65%;
     background-color: red;
+    display:flex;
+    flex-direction: column;
+    padding-left:10%;
 }
 
 .right{
-    width:30%;
+    width:35%;
     background-color:blue;
+}
+
+.LTopLeft,
+.menu{
+    padding-left:30px;
+}
+
+.LTopLeft{
+    padding-top:40px;
+    font-size:27px;
+    padding-bottom:20px;
+}
+
+.menu{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6,
+#img7,
+#img8,
+#img9
+{
+    width:250px;
+    height:250px;
+    border-radius: 8px;
+}
+
+.add{
+    position:relative;
+    color:white;
+    left:20%;
+    bottom:7%;
+    display:flex;
+}
+
+.add button{
+    display:flex;
+    gap:5px;
+    justify-content: center;
+    font-size:15px;
+    font-weight:500;
+    padding:8px;
+    padding-right:29px;
+    padding-left:26px;
+    border-radius: 10px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+}
+
+.details1,
+.details2,
+.details3,
+.details4,
+.details5,
+.details6,
+.details7,
+.details8,
+.details9{
+    margin-top:-15px;
 }
