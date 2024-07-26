@@ -11,23 +11,24 @@ body{
 .parent{
     display:flex;
     width:100%;
+    background-color:whitesmoke;
 }
 
 .left{
     width: 65%;
-    background-color: red;
     display:flex;
     flex-direction: column;
     padding-left:10%;
+    /* padding-left:2%;  this is if i want to look at laptop screen */
 }
 
 .right{
     width:35%;
-    background-color:blue;
 }
 
 .LTopLeft,
-.menu{
+.menu,
+.cart{
     padding-left:30px;
 }
 
@@ -78,8 +79,9 @@ body{
     padding-left:26px;
     border-radius: 10px;
     outline:none;
-    border:none;
+    border:1px solid #dadde1;
     cursor:pointer;
+    background-color: white;
 }
 
 .details1,
@@ -92,4 +94,29 @@ body{
 .details8,
 .details9{
     margin-top:-15px;
+}
+
+.cart{
+    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    width:69%;
+    height:auto;
+    border-radius: 7px;
+}
+.cartTitle{
+    font-size:27px;
+    color: brown;
+}
+
+#empty
+{
+    padding-top:15px;
+    padding-left:25%;
+}
+
+#nullC{
+    padding-left:15%;
+    color: #E6AEB9;
 }
