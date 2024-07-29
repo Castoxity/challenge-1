@@ -36,8 +36,8 @@
                     </div>
                     <div class="details1">
                         <p>Waffle</p>
-                        <p>Waffle with berries</p>
-                        <p>$6.50</p>
+                        <p style="font-weight: 700; font-size: 17px;">Waffle with berries</p>
+                        <p style="font-weight:600; font-size:17px;">$6.50</p>
                     </div>
                 </div>
                 <div class="card2">
@@ -63,7 +63,7 @@
                     </div>
                     <div class="details2">
                         <p>Creme Brulee</p>
-                        <p>Vanilla Bean Creme Brulee</p>
+                        <p style="font-weight: 700; font-size: 17px;">Vanilla Bean Creme Brulee</p>
                         <p>$7.00</p>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="details3">
                         <p>Macaron</p>
-                        <p>Macaron Mix of five</p>
+                        <p style="font-weight: 700; font-size: 17px;">Macaron Mix of five</p>
                         <p>$8.00</p>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="details4">
                         <p>Tiramisu</p>
-                        <p>Classic Tiramisu</p>
+                        <p style="font-weight: 700; font-size: 17px;">Classic Tiramisu</p>
                         <p>$5.50</p>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                     </div>
                     <div class="details5">
                         <p>Baklava</p>
-                        <p>Pistachio Baklava</p>
+                        <p style="font-weight: 700; font-size: 17px;">Pistachio Baklava</p>
                         <p>$4.00</p>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                     </div>
                     <div class="details6">
                         <p>Pie</p>
-                        <p>Lemon Meringue Pie</p>
+                        <p style="font-weight: 700; font-size: 17px;">Lemon Meringue Pie</p>
                         <p>$5.00</p>
                     </div>
                 </div>
@@ -263,103 +263,104 @@
                 <div class="cartTitle">
                     Your Cart (<span id="cAmount">0</span>)
                 </div>
-                <!-- <div class="emptyCart">
+                <div class="emptyCart">
                     <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/illustration-empty-cart.svg" id="empty">
-                    <p id="nullC">Your added items will appear here</p>
-                </div> -->
+                    <p id="nullC" style="padding-bottom:20px;">Your added items will appear here</p>
+                </div>
                 <div class="orders">
-                    <div class="CartWaffle">
-                        <div class="TiramisuLeft">
-                                <p style="font-weight: 600;">Waffle with berries</p>
-                                <span id="QTiramisu">1x</span> @$6.50 <span id="price">$6.50</span>
+                        <div class="CartWaffle">
+                            <div class="TiramisuLeft">
+                                    <p style="font-weight: 600;">Waffle with berries</p>
+                                    <span id="QTiramisu">0</span>x @$6.50 <span id="price">$6.50</span>
+                            </div>
+                            <div class="cancel">
+                                <button id="cancel">X</button>
+                            </div>
                         </div>
-                        <div class="cancel">
-                            <button id="cancel">X</button>
+                        <div class="CartCreme">
+                            <div class="TiramisuLeft">
+                                <p style="font-weight:600;">Vanilla Bean Creme Brulee</p>
+                                <span id="QTiramisu">0</span>x @$7.00 <span id="price">$7.00</span>
+                            </div>
+                            <div class="cancel">
+                                <button id="cancel">X</button>
+                            </div>
                         </div>
+                        <div class="CartMacaron">
+                            <div class="TiramisuLeft">
+                                <p style="font-weight:600;">Macaron Mix of Five</p>
+                                <span id="QTiramisu">0</span>x @$8.00 <span id="price">$8.80</span>
+                            </div>
+                            <div class="cancel">
+                                <button id="cancel">X</button>
+                            </div>
+                        </div>
+                        <div class="CartTiramisu">
+                            <div class="TiramisuLeft">
+                                <p style="font-weight:600;">Classic Tiramisu</p>
+                                <span id="QTiramisu">0</span>x @$5.50 <span id="price">$5.50</span>
+                            </div>
+                            <div class="cancel">
+                                <button id="cancel">X</button>
+                            </div>
+                        </div>
+                        <div class="CartBaklava">
+                            <div class="TiramisuLeft">
+                                <p style="font-weight:600;">Pistachio Baklava</p>
+                                <span id="QTiramisu">0</span>x @$4.00 <span id="price">$4.00</span>
+                            </div>
+                            <div class="cancel">
+                                <button id="cancel">X</button>
+                            </div>
+                        </div>
+                        <div class="CartPie">
+                            <div class="TiramisuLeft">
+                                <p style="font-weight:600;">Lemon Meringue Pie</p>
+                                <span id="QTiramisu">0</span>x @$5.00 <span id="price">$5.00</span>
+                            </div>
+                            <div class="cancel">
+                                <button id="cancel">X</button>
+                            </div>
+                        </div>
+                        <div class="CartCake">
+                            <div class="TiramisuLeft">
+                                <p style="font-weight:600;">Red Velvet Cake</p>
+                                <span id="QTiramisu">0</span>x @$4.50 <span id="price">$4.50</span>
+                            </div>
+                            <div class="cancel">
+                                <button id="cancel">X</button>
+                            </div>
+                        </div>
+                        <div class="CartBrownie">
+                            <div class="TiramisuLeft">
+                                <p style="font-weight:600;">Brownie</p>
+                                <span id="QTiramisu">0</span>x @$5.50 <span id="price">$5.50</span>
+                            </div>
+                            <div class="cancel">
+                                <button id="cancel">X</button>
+                            </div>
+                        </div>
+                        <div class="CartCotta">
+                            <div class="TiramisuLeft">
+                                <p style="font-weight:600;">Vanilla Panna Cotta</p>
+                                <span id="QTiramisu">0</span>x @$6.50 <span id="price">$6.50</span>
+                            </div>
+                            <div class="cancel">
+                                <button id="cancel">X</button>
+                            </div>
+                        </div>
+                    
+                    <div class="total">
+                        <span id="totalheading">Order Total</span>
+                        <span id="total">$<span id="totalNumber">2</span></span>
                     </div>
-                    <div class="CartCreme">
-                        <div class="TiramisuLeft">
-                            <p style="font-weight:600;">Vanilla Bean Creme Brulee</p>
-                            <span id="QTiramisu">1x</span> @$7.00 <span id="price">$7.00</span>
-                        </div>
-                        <div class="cancel">
-                            <button id="cancel">X</button>
-                        </div>
+                    <div class="carbon">
+                        <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/icon-carbon-neutral.svg" alt="">
+                        This is a <span style="font-weight: 600;">carbon-neutral</span> delivery
                     </div>
-                    <div class="CartMacaron">
-                        <div class="TiramisuLeft">
-                            <p style="font-weight:600;">Macaron Mix of Five</p>
-                            <span id="QTiramisu">1x</span> @$8.00 <span id="price">$8.80</span>
-                        </div>
-                        <div class="cancel">
-                            <button id="cancel">X</button>
-                        </div>
+                    <div class="confirm">
+                        <button id="confirm" type="submit">Confirm Order</button>
                     </div>
-                    <div class="CartTiramisu">
-                        <div class="TiramisuLeft">
-                            <p style="font-weight:600;">Classic Tiramisu</p>
-                            <span id="QTiramisu">1x</span> @$5.50 <span id="price">$5.50</span>
-                        </div>
-                        <div class="cancel">
-                            <button id="cancel">X</button>
-                        </div>
-                    </div>
-                    <div class="CartBaklava">
-                        <div class="TiramisuLeft">
-                            <p style="font-weight:600;">Pistachio Baklava</p>
-                            <span id="QTiramisu">1x</span> @$4.00 <span id="price">$4.00</span>
-                        </div>
-                        <div class="cancel">
-                            <button id="cancel">X</button>
-                        </div>
-                    </div>
-                    <div class="CartPie">
-                        <div class="TiramisuLeft">
-                            <p style="font-weight:600;">Lemon Meringue Pie</p>
-                            <span id="QTiramisu">1x</span> @$5.00 <span id="price">$5.00</span>
-                        </div>
-                        <div class="cancel">
-                            <button id="cancel">X</button>
-                        </div>
-                    </div>
-                    <div class="CartCake">
-                        <div class="TiramisuLeft">
-                            <p style="font-weight:600;">Red Velvet Cake</p>
-                            <span id="QTiramisu">1x</span> @$4.50 <span id="price">$4.50</span>
-                        </div>
-                        <div class="cancel">
-                            <button id="cancel">X</button>
-                        </div>
-                    </div>
-                    <div class="CartBrownie">
-                        <div class="TiramisuLeft">
-                            <p style="font-weight:600;">Brownie</p>
-                            <span id="QTiramisu">1x</span> @$5.50 <span id="price">$5.50</span>
-                        </div>
-                        <div class="cancel">
-                            <button id="cancel">X</button>
-                        </div>
-                    </div>
-                    <div class="CartCotta">
-                        <div class="TiramisuLeft">
-                            <p style="font-weight:600;">Vanilla Panna Cotta</p>
-                            <span id="QTiramisu">1x</span> @$6.50 <span id="price">$6.50</span>
-                        </div>
-                        <div class="cancel">
-                            <button id="cancel">X</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="total">
-                    <span id="totalheading">Order Total</span>
-                    <span id="total">$<span id="totalNumber">2</span></span>
-                </div>
-                <div class="carbon">
-                    <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/icon-carbon-neutral.svg" alt="">
-                    This is a <span style="font-weight: 600;">carbon-neutral</span> delivery
-                </div>
-                <div class="confirm">
-                    <button id="confirm" type="submit">Confirm Order</button>
                 </div>
             </div>
         </div>

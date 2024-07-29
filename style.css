@@ -19,8 +19,9 @@ body{
     display:flex;
     flex-direction: column;
     /* padding-left:10%; */
+     /* this is if i want to look at smaller pc screen */
     padding-left:2%; 
-     /* this is if i want to look at laptop screen */
+    padding-bottom:60px;
 }
 
 .right{
@@ -43,7 +44,8 @@ body{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:20px;
+    gap:15px;
+    /* for bigger screen, use 30px gap */
 }
 
 #img1,
@@ -56,8 +58,8 @@ body{
 #img8,
 #img9
 {
-    width:250px;
-    height:250px;
+    width:260px;
+    height:260px;
     border-radius: 8px;
 }
 
@@ -120,7 +122,8 @@ body{
 .details7,
 .details8,
 .details9{
-    margin-top:-15px;
+    margin-top:-10px;
+    padding-bottom:15px;
 }
 
 .cart{
@@ -209,6 +212,7 @@ body{
 .orders{
     width:100%;
     padding-top:10px;
+    display: none;
 }
 
 .CartTiramisu,
