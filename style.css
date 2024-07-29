@@ -205,3 +205,113 @@ body{
     gap:5px; */
 }
 }
+
+.orders{
+    width:100%;
+    padding-top:10px;
+}
+
+.CartTiramisu,
+.CartWaffle,
+.CartCreme,
+.CartMacaron,
+.CartBaklava,
+.CartPie,
+.CartCake,
+.CartBrownie,
+.CartCotta{
+    display:flex;
+    font-size:17px;
+    align-items: center;
+    width:90%;
+    border-bottom:1px solid black;
+    padding-bottom:15px;
+    padding-top:12px;
+}
+
+.cancel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20%;
+    height:100%;
+}
+
+#cancel{
+    /* height:20px; */
+    border:1px solid black;
+    outline:none;
+    border-radius:100%;
+    cursor: pointer;
+    background-color: white;
+    font-size:16px;
+    font-weight:700;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-right:7px;
+    padding-left:7px;
+    padding-top:3px;
+    padding-bottom:3px;
+    opacity:0.3;
+    transition:opacity ease-in-out 0.3s;
+}
+
+#cancel:hover{
+    opacity:1;
+}
+
+.TiramisuLeft{
+width:80%;
+}
+
+.total{
+    width:90%;
+    display:flex;
+    height:50px;
+}
+
+#totalheading{
+    width:80%;
+    display:flex;
+    align-items: center;
+    font-size:16px;
+}
+
+#total{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    font-size:24px;
+    font-weight:700;
+}
+
+.carbon{
+    width:80%;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(13, 31%, 94%);
+    border-radius: 6px;
+    margin-left:12px;
+}
+
+.confirm{
+    padding-top:20px;
+    padding-bottom:25px;
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirm{
+    height:46px;
+    width:85%;
+    outline:none;
+    border:none;
+    border-radius: 30px;
+    cursor: pointer;
+}
