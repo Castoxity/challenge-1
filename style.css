@@ -11,15 +11,16 @@ body{
 .parent{
     display:flex;
     width:100%;
-    background-color:whitesmoke;
+    background-color:hsl(13, 31%, 94%);
 }
 
 .left{
     width: 65%;
     display:flex;
     flex-direction: column;
-    padding-left:10%;
-    /* padding-left:2%;  this is if i want to look at laptop screen */
+    /* padding-left:10%; */
+    padding-left:2%; 
+     /* this is if i want to look at laptop screen */
 }
 
 .right{
@@ -62,26 +63,52 @@ body{
 
 .add{
     position:relative;
-    color:white;
-    left:20%;
-    bottom:7%;
+    left:19%;
+    bottom:8%;
     display:flex;
+    /* width:20px; */
+    width:65%;
+    height:10%;
 }
 
-.add button{
+.buttonadd{
     display:flex;
-    gap:5px;
     justify-content: center;
-    font-size:15px;
-    font-weight:500;
-    padding:8px;
+    /* padding:8px;
     padding-right:29px;
-    padding-left:26px;
+    padding-left:26px; */
     border-radius: 10px;
-    outline:none;
     border:1px solid #dadde1;
-    cursor:pointer;
     background-color: white;
+    /* background-color: red; */
+    width:100%;
+    height:100%;
+}
+
+#addtocart1,
+#addtocart2,
+#addtocart3,
+#addtocart4,
+#addtocart5,
+#addtocart6,
+#addtocart7,
+#addtocart8,
+#addtocart9
+{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:16px;
+    font-weight:500;
+    gap:5px;
+    color:hsl(14, 86%, 42%);
+    /* display:none; */
+}
+
+#quantity{
+    display:none;
 }
 
 .details1,
@@ -119,4 +146,58 @@ body{
 #nullC{
     padding-left:15%;
     color: #E6AEB9;
+}
+
+.add:hover
+{
+#quantity{
+    display:block;
+    color:white;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:16px;
+    font-weight:500;
+    gap:25%;
+    cursor:default;
+    background-color:hsl(14, 86%, 42%);
+    border-radius: 10px;
+    padding:0;
+    margin:0;
+}
+
+#minus,
+#plus{
+    width:27px;
+    height:25px;
+    border-radius: 90px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    background-color: white;
+    color:hsl(14, 86%, 42%);
+}
+
+#addtocart1,
+#addtocart2,
+#addtocart3,
+#addtocart4,
+#addtocart5,
+#addtocart6,
+#addtocart7,
+#addtocart8,
+#addtocart9{
+    display:none;
+    /* color:black;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:16px;
+    font-weight:500;
+    gap:5px; */
+}
 }
