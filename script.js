@@ -32,6 +32,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const quantity8 = document.getElementById('quantityno8');
     const quantity9 = document.getElementById('quantityno9');
 
+    // carts
+    const waffle = document.getElementById('CartWaffle');
+    const brulee = document.getElementById('CartCreme');
+    const macaron = document.getElementById('CartMacaron');
+    const tiramisu = document.getElementById('CartTiramisu');
+    const baklava = document.getElementById('CartBaklava');
+    const pie = document.getElementById('CartPie');
+    const cake = document.getElementById('CartCake');
+    const brownie = document.getElementById('CartBrownie');
+    const cotta = document.getElementById('CartCotta');
+
+
     let cAmount = 0; //quantity on right
     let quantityE1 = 0;
     let quantityE2 = 0;
@@ -192,11 +204,17 @@ document.addEventListener('DOMContentLoaded', function() {
       quantity9.textContent = quantityE9;
       if (cAmount > 0) {
         ordersE.style.display = 'block';
+        // waffle.style.display='block'; i think its appearing but with no extra styles
         emptyCart.style.display = 'none';
       } else {
         ordersE.style.display = 'none';
         emptyCart.style.display = 'block';
       }
+
+      // if(quantityE1 > 0){
+      //   waffle.style.display= 'block';
+      // }
+
     }
 
 
