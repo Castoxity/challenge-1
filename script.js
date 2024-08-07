@@ -53,8 +53,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const cotta = document.getElementById('CartCotta');
     const results = document.getElementById('results');
 
+    // all the cancel order buttons
+    const cancel1 = document.getElementById('cancel1');
+    const cancel2 = document.getElementById('cancel2');
+    const cancel3 = document.getElementById('cancel3');
+    const cancel4 = document.getElementById('cancel4');
+    const cancel5 = document.getElementById('cancel5');
+    const cancel6 = document.getElementById('cancel6');
+    const cancel7 = document.getElementById('cancel7');
+    const cancel8 = document.getElementById('cancel8');
+    const cancel9 = document.getElementById('cancel9');
 
-    let cAmount = 0; //quantity on right
+    let cAmount = 0; 
     let quantityE1 = 0;
     let quantityE2 = 0;
     let quantityE3 = 0;
@@ -65,167 +75,240 @@ document.addEventListener('DOMContentLoaded', function() {
     let quantityE8 = 0;
     let quantityE9 = 0;
     updateCAmount();
+    calculations();
 
         
     increase1.addEventListener('click', function() {
-      cAmount++;
       quantityE1++;
       qWaffle.textContent = quantityE1;
 
       updateCAmount();
+      calculations();
     });
 
     increase2.addEventListener('click', function() {
-      cAmount++;
       quantityE2++;
       qCreme.textContent = quantityE2;
       
       updateCAmount();
+      calculations();
     });
   
     increase3.addEventListener('click', function() {
-      cAmount++;
       quantityE3++;
       qMacaron.textContent = quantityE3;
       
       updateCAmount();
+      calculations();
     });
   
     increase4.addEventListener('click', function() {
-      cAmount++;
       quantityE4++;
       qTiramisu.textContent = quantityE4;
 
       updateCAmount();
+      calculations();
     });
   
     increase5.addEventListener('click', function() {
-      cAmount++;
       quantityE5++;
       qBaklava.textContent = quantityE5;
       
       updateCAmount();
+      calculations();
     });
   
     increase6.addEventListener('click', function() {
-      cAmount++;
       quantityE6++;
       qPie.textContent=quantityE6;
       
       updateCAmount();
+      calculations();
     });
   
     increase7.addEventListener('click', function() {
-      cAmount++;
       quantityE7++;
       qCake.textContent = quantityE7;
       
       updateCAmount();
+      calculations();
     });
   
     increase8.addEventListener('click', function() {
-      cAmount++;
       quantityE8++;
       qBrownie.textContent = quantityE8;
       
       updateCAmount();
+      calculations();
     });
   
     increase9.addEventListener('click', function() {
-      cAmount++;
       quantityE9++;
       qCotta.textContent=quantityE9;
       
       updateCAmount();
+      calculations();
     });
   
     decrease1.addEventListener('click', function() {
       if (quantityE1 > 0) {
-        cAmount--;
         quantityE1--;
         qWaffle.textContent = quantityE1;
         updateCAmount();
+        calculations();
       }
     });
     
     decrease2.addEventListener('click', function() {
       if (quantityE2 > 0) {
-        cAmount--;
         quantityE2--;
         qCreme.textContent = quantityE2;
 
         updateCAmount();
+        calculations();
       }
     });
     
     decrease3.addEventListener('click', function() {
       if (quantityE3 > 0) {
-        cAmount--;
         quantityE3--;
         qMacaron.textContent = quantityE3;
 
         updateCAmount();
+        calculations();
       }
     });
     
     decrease4.addEventListener('click', function() {
       if (quantityE4 > 0) {
-        cAmount--;
         quantityE4--;
         qTiramisu.textContent = quantityE4;
 
         updateCAmount();
+        calculations();
       }
     });
     
     decrease5.addEventListener('click', function() {
       if (quantityE5 > 0) {
-        cAmount--;
         quantityE5--;
         qBaklava.textContent = quantityE5;
 
         updateCAmount();
+        calculations();
       }
     });
     
     decrease6.addEventListener('click', function() {
       if (quantityE6 > 0) {
-        cAmount--;
         quantityE6--;
         qPie.textContent=quantityE6;
 
         updateCAmount();
+        calculations();
       }
     });
     
     decrease7.addEventListener('click', function() {
       if (quantityE7 > 0) {
-        cAmount--;
         quantityE7--;
         qCake.textContent = quantityE7;
 
         updateCAmount();
+        calculations();
       }
     });
     
     decrease8.addEventListener('click', function() {
       if (quantityE8 > 0) {
-        cAmount--;
         quantityE8--;
         qBrownie.textContent = quantityE8;
 
         updateCAmount();
+        calculations();
       }
     });
     
     decrease9.addEventListener('click', function() {
       if (quantityE9 > 0) {
-        cAmount--;
         quantityE9--;
         qCotta.textContent=quantityE9;
 
         updateCAmount();
+        calculations();
       }
+    });
+    
+    cancel1.addEventListener('click', function() {
+      quantityE1 = 0;
+      qWaffle.textContent = quantityE1;
+
+      updateCAmount();
+      calculations();
+    });
+      
+    cancel2.addEventListener('click', function() {
+      quantityE2 = 0;
+      qCreme.textContent = quantityE2;
+
+      updateCAmount();
+      calculations();
+    });
+      
+    cancel3.addEventListener('click', function() {
+      quantityE3 = 0;
+      qMacaron.textContent = quantityE3;
+
+      updateCAmount();
+      calculations();
+    });
+      
+    cancel4.addEventListener('click', function() {
+      quantityE4 = 0;
+      qTiramisu.textContent = quantityE4;
+
+      updateCAmount();
+      calculations();
+    });
+      
+    cancel5.addEventListener('click', function() {
+      quantityE5 = 0;
+      qBaklava.textContent = quantityE5;
+
+      updateCAmount();
+      calculations();
+    });
+      
+    cancel6.addEventListener('click', function() {
+      quantityE6 = 0;
+      qPie.textContent = quantityE6;
+
+      updateCAmount();
+      calculations();
+    });
+      
+    cancel7.addEventListener('click', function() {
+      quantityE7 = 0;
+      qCake.textContent = quantityE7;
+
+      updateCAmount();
+      calculations();
+    });
+      
+    cancel8.addEventListener('click', function() {
+      quantityE8 = 0;
+      qBrownie.textContent = quantityE8;
+
+      updateCAmount();
+      calculations();
+    });
+      
+    cancel9.addEventListener('click', function() {
+      quantityE9 = 0;
+      qCotta.textContent = quantityE9;
+
+      updateCAmount();
+      calculations();
     });
   
     function updateCAmount() {
@@ -307,11 +390,62 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function calculations(){
-      const price1 = document.getElementById('price');
+      const price1 = document.getElementById('price1');
+      const price2 = document.getElementById('price2');
+      const price3 = document.getElementById('price3');
+      const price4 = document.getElementById('price4');
+      const price5 = document.getElementById('price5');
+      const price6 = document.getElementById('price6');
+      const price7 = document.getElementById('price7');
+      const price8 = document.getElementById('price8');
+      const price9 = document.getElementById('price9');
+      const total = document.getElementById('totalNumber');
 
 
       let cost1 = 6.50;
+      let cost2 = 7.00;
+      let cost3 = 8.00;
+      let cost4 = 5.50;
+      let cost5 = 4.00;
+      let cost6 = 5.00;
+      let cost7 = 4.50;
+      let cost8 = 5.50;
+      let cost9 = 6.50;
+      
+      let total1 = quantityE1 * cost1;
+      price1.textContent = total1;
+            
+      let total2 = quantityE2 * cost2;
+      price2.textContent = total2;
+            
+      let total3 = quantityE3 * cost3;
+      price3.textContent = total3;
+            
+      let total4 = quantityE4 * cost4;
+      price4.textContent = total4;
+            
+      let total5 = quantityE5 * cost5;
+      price5.textContent = total5;
+            
+      let total6 = quantityE6 * cost6;
+      price6.textContent = total6;
+            
+      let total7 = quantityE7 * cost7;
+      price7.textContent = total7;
+            
+      let total8 = quantityE8 * cost8;
+      price8.textContent = total8;
+            
+      let total9 = quantityE9 * cost9;
+      price9.textContent = total9;
+      
+      let totalC = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9;
+      total.textContent = totalC;
+      
+      cAmount = quantityE1 + quantityE2 + quantityE3 + quantityE4 + quantityE5 + quantityE6 + quantityE7 + quantityE8 + quantityE9;
+      cAmountE.textContent = cAmount;
 
+      updateCAmount();
     }
 
   });
