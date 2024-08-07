@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const cAmountE = document.getElementById('cAmount');
-    const ordersE= document.getElementById('bruh');
+    // const ordersE= document.getElementById('bruh');
     const emptyCart = document.getElementById('emptyCart');
     const qWaffle = document.getElementById('QWaffle');
     const qCreme = document.getElementById('QCreme');
@@ -66,21 +66,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let quantityE9 = 0;
     updateCAmount();
 
-    // let qWaffleC = 0;
-    // let qCremeC = 0;
-    // let qMacaronC = 0;
-    // let qTiramisuC = 0;
-    // let qBaklavaC = 0;
-    // let qPieC = 0;
-    // let qCakeC = 0;
-    // let qBrownieC = 0;
-    // let qCottaC = 0;
-
         
     increase1.addEventListener('click', function() {
       cAmount++;
       quantityE1++;
-      // qWaffleC++;
       qWaffle.textContent = quantityE1;
 
       updateCAmount();
@@ -89,8 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     increase2.addEventListener('click', function() {
       cAmount++;
       quantityE2++;
-      qCremeC++;
-      qCreme.textContent = qCremeC;
+      qCreme.textContent = quantityE2;
       
       updateCAmount();
     });
@@ -98,8 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     increase3.addEventListener('click', function() {
       cAmount++;
       quantityE3++;
-      qMacaronC++;
-      qMacaron.textContent = qMacaronC;
+      qMacaron.textContent = quantityE3;
       
       updateCAmount();
     });
@@ -107,8 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     increase4.addEventListener('click', function() {
       cAmount++;
       quantityE4++;
-      qTiramisuC++;
-      qTiramisu.textContent = qTiramisuC;
+      qTiramisu.textContent = quantityE4;
 
       updateCAmount();
     });
@@ -116,8 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
     increase5.addEventListener('click', function() {
       cAmount++;
       quantityE5++;
-      qBaklavaC++;
-      qBaklava.textContent = qBaklavaC;
+      qBaklava.textContent = quantityE5;
       
       updateCAmount();
     });
@@ -125,8 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
     increase6.addEventListener('click', function() {
       cAmount++;
       quantityE6++;
-      qPieC++;
-      qPie.textContent=qPieC;
+      qPie.textContent=quantityE6;
       
       updateCAmount();
     });
@@ -134,8 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
     increase7.addEventListener('click', function() {
       cAmount++;
       quantityE7++;
-      qCakeC++;
-      qCake.textContent = qCakeC;
+      qCake.textContent = quantityE7;
       
       updateCAmount();
     });
@@ -143,8 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
     increase8.addEventListener('click', function() {
       cAmount++;
       quantityE8++;
-      qBrownieC++;
-      qBrownie.textContent = qBrownieC;
+      qBrownie.textContent = quantityE8;
       
       updateCAmount();
     });
@@ -152,8 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
     increase9.addEventListener('click', function() {
       cAmount++;
       quantityE9++;
-      qCottaC++;
-      qCotta.textContent=qCottaC;
+      qCotta.textContent=quantityE9;
       
       updateCAmount();
     });
@@ -162,7 +143,6 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE1 > 0) {
         cAmount--;
         quantityE1--;
-        // qWaffleC--;
         qWaffle.textContent = quantityE1;
         updateCAmount();
       }
@@ -172,8 +152,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE2 > 0) {
         cAmount--;
         quantityE2--;
-        qCremeC--;
-        qCreme.textContent = qCremeC;
+        qCreme.textContent = quantityE2;
+
         updateCAmount();
       }
     });
@@ -182,8 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE3 > 0) {
         cAmount--;
         quantityE3--;
-        qMacaronC--;
-        qMacaron.textContent = qMacaronC;
+        qMacaron.textContent = quantityE3;
 
         updateCAmount();
       }
@@ -193,8 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE4 > 0) {
         cAmount--;
         quantityE4--;
-        qTiramisuC--;
-        qTiramisu.textContent = qTiramisuC;
+        qTiramisu.textContent = quantityE4;
 
         updateCAmount();
       }
@@ -204,8 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE5 > 0) {
         cAmount--;
         quantityE5--;
-        qBaklavaC--;
-        qBaklava.textContent = qBaklavaC;
+        qBaklava.textContent = quantityE5;
 
         updateCAmount();
       }
@@ -215,8 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE6 > 0) {
         cAmount--;
         quantityE6--;
-        qPieC--;
-        qPie.textContent=qPieC;
+        qPie.textContent=quantityE6;
 
         updateCAmount();
       }
@@ -226,8 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE7 > 0) {
         cAmount--;
         quantityE7--;
-        qCakeC--;
-        qCake.textContent = qCakeC;
+        qCake.textContent = quantityE7;
 
         updateCAmount();
       }
@@ -237,8 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE8 > 0) {
         cAmount--;
         quantityE8--;
-        qBrownieC--;
-        qBrownie.textContent = qBrownieC;
+        qBrownie.textContent = quantityE8;
 
         updateCAmount();
       }
@@ -248,8 +222,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE9 > 0) {
         cAmount--;
         quantityE9--;
-        qCottaC--;
-        qCotta.textContent=qCottaC;
+        qCotta.textContent=quantityE9;
 
         updateCAmount();
       }
