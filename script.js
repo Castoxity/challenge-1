@@ -2,6 +2,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const cAmountE = document.getElementById('cAmount');
     const ordersE= document.getElementById('bruh');
     const emptyCart = document.getElementById('emptyCart');
+    const qWaffle = document.getElementById('QWaffle');
+    const qCreme = document.getElementById('QCreme');
+    // const qMacaron = docuemnt.getElementById('QMacaron');
+    // const qTiramisu = document.getElementById('QTiramisu');
+    // const qBaklava = document.getElementById('QBaklava');
+    // const qPie = document.getElementById('QPie');
+    // const qCake = document.getElementById('QCake');
+    // const qBrownie = document.getElementById('QBrownie');
+    // const qCotta = document.getElementById('QCotta');
 
     // getting all the plus and minus and quantity number for left add to cart
     const increase1 = document.getElementById('plus1');
@@ -55,17 +64,32 @@ document.addEventListener('DOMContentLoaded', function() {
     let quantityE8 = 0;
     let quantityE9 = 0;
     updateCAmount();
+
+    let qWaffleC = 0;
+    let qCremeC = 0;
+    // let qMacaronC = 0;
+    // let qTiramisuC = 0;
+    // let qBaklavaC = 0;
+    // let qPieC = 0;
+    // let qCakeC = 0;
+    // let qBrownieC = 0;
+    // let qCottaC = 0;
+
         
     increase1.addEventListener('click', function() {
       cAmount++;
       quantityE1++;
-      
+      qWaffleC++;
+      qWaffle.textContent = qWaffleC;
+
       updateCAmount();
     });
 
     increase2.addEventListener('click', function() {
       cAmount++;
       quantityE2++;
+      qCremeC++;
+      qCreme.textContent = qCremeC;
       
       updateCAmount();
     });
@@ -73,6 +97,8 @@ document.addEventListener('DOMContentLoaded', function() {
     increase3.addEventListener('click', function() {
       cAmount++;
       quantityE3++;
+      // qMacaronC++;
+      // qMacaron.textContent = qMacaronC;
       
       updateCAmount();
     });
@@ -120,23 +146,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     decrease1.addEventListener('click', function() {
-      if (cAmount > 0) {
+      if (quantityE1 > 0) {
         cAmount--;
         quantityE1--;
+        qWaffleC--;
+        qWaffle.textContent = qWaffleC;
         updateCAmount();
       }
     });
     
     decrease2.addEventListener('click', function() {
-      if (cAmount > 0) {
+      if (quantityE2 > 0) {
         cAmount--;
         quantityE2--;
+        qCremeC--;
+        qCreme.textContent = qCremeC;
         updateCAmount();
       }
     });
     
     decrease3.addEventListener('click', function() {
-      if (cAmount > 0) {
+      if (quantityE3 > 0) {
         cAmount--;
         quantityE3--;
         updateCAmount();
@@ -144,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     decrease4.addEventListener('click', function() {
-      if (cAmount > 0) {
+      if (quantityE4 > 0) {
         cAmount--;
         quantityE4--;
         updateCAmount();
@@ -152,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     decrease5.addEventListener('click', function() {
-      if (cAmount > 0) {
+      if (quantityE5 > 0) {
         cAmount--;
         quantityE5--;
         updateCAmount();
@@ -160,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     decrease6.addEventListener('click', function() {
-      if (cAmount > 0) {
+      if (quantityE6 > 0) {
         cAmount--;
         quantityE6--;
         updateCAmount();
@@ -168,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     decrease7.addEventListener('click', function() {
-      if (cAmount > 0) {
+      if (quantityE7 > 0) {
         cAmount--;
         quantityE7--;
         updateCAmount();
@@ -176,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     decrease8.addEventListener('click', function() {
-      if (cAmount > 0) {
+      if (quantityE8 > 0) {
         cAmount--;
         quantityE8--;
         updateCAmount();
@@ -184,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     decrease9.addEventListener('click', function() {
-      if (cAmount > 0) {
+      if (quantityE9 > 0) {
         cAmount--;
         quantityE9--;
         updateCAmount();
@@ -203,11 +233,21 @@ document.addEventListener('DOMContentLoaded', function() {
       quantity8.textContent = quantityE8;
       quantity9.textContent = quantityE9;
       if (cAmount > 0) {
-        ordersE.style.display = 'block';
-        // waffle.style.display='block'; i think its appearing but with no extra styles
+        // ordersE.style.display = 'block';
+        //  waffle.style.display='block'; // i think its appearing but with no extra styles
+        //  brulee.style.display='block';
         emptyCart.style.display = 'none';
       } else {
-        ordersE.style.display = 'none';
+        // ordersE.style.display = 'none';
+        waffle.style.display='none';
+        brulee.style.display='none';
+        macaron.style.display='none';
+        tiramisu.style.display = 'none';
+        baklava.style.display = 'none';
+        pie.style.display = 'none';
+        cake.style.display = 'none';
+        brownie.style.display = 'none';
+        cotta.style.display = 'none';
         emptyCart.style.display = 'block';
       }
 
