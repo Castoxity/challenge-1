@@ -214,7 +214,7 @@ body{
     padding-top:10px;
 }
 
-.CartTiramisu,
+/* .CartTiramisu,
 .CartWaffle,
 .CartCreme,
 .CartMacaron,
@@ -229,8 +229,8 @@ body{
     width:90%;
     border-bottom:1px solid black;
     padding-bottom:15px;
-    padding-top:12px;
-}
+} */
+
 
 .cancel{
     display: flex;

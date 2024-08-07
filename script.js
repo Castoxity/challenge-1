@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const emptyCart = document.getElementById('emptyCart');
     const qWaffle = document.getElementById('QWaffle');
     const qCreme = document.getElementById('QCreme');
-    // const qMacaron = docuemnt.getElementById('QMacaron');
-    // const qTiramisu = document.getElementById('QTiramisu');
-    // const qBaklava = document.getElementById('QBaklava');
-    // const qPie = document.getElementById('QPie');
-    // const qCake = document.getElementById('QCake');
-    // const qBrownie = document.getElementById('QBrownie');
-    // const qCotta = document.getElementById('QCotta');
+    const qMacaron = document.getElementById('QMacaron');
+    const qTiramisu = document.getElementById('QTiramisu');
+    const qBaklava = document.getElementById('QBaklava');
+    const qPie = document.getElementById('QPie');
+    const qCake = document.getElementById('QCake');
+    const qBrownie = document.getElementById('QBrownie');
+    const qCotta = document.getElementById('QCotta');
 
     // getting all the plus and minus and quantity number for left add to cart
     const increase1 = document.getElementById('plus1');
@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const cake = document.getElementById('CartCake');
     const brownie = document.getElementById('CartBrownie');
     const cotta = document.getElementById('CartCotta');
+    const results = document.getElementById('results');
 
 
     let cAmount = 0; //quantity on right
@@ -65,8 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let quantityE9 = 0;
     updateCAmount();
 
-    let qWaffleC = 0;
-    let qCremeC = 0;
+    // let qWaffleC = 0;
+    // let qCremeC = 0;
     // let qMacaronC = 0;
     // let qTiramisuC = 0;
     // let qBaklavaC = 0;
@@ -79,8 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
     increase1.addEventListener('click', function() {
       cAmount++;
       quantityE1++;
-      qWaffleC++;
-      qWaffle.textContent = qWaffleC;
+      // qWaffleC++;
+      qWaffle.textContent = quantityE1;
 
       updateCAmount();
     });
@@ -97,8 +98,8 @@ document.addEventListener('DOMContentLoaded', function() {
     increase3.addEventListener('click', function() {
       cAmount++;
       quantityE3++;
-      // qMacaronC++;
-      // qMacaron.textContent = qMacaronC;
+      qMacaronC++;
+      qMacaron.textContent = qMacaronC;
       
       updateCAmount();
     });
@@ -106,13 +107,17 @@ document.addEventListener('DOMContentLoaded', function() {
     increase4.addEventListener('click', function() {
       cAmount++;
       quantityE4++;
-      
+      qTiramisuC++;
+      qTiramisu.textContent = qTiramisuC;
+
       updateCAmount();
     });
   
     increase5.addEventListener('click', function() {
       cAmount++;
       quantityE5++;
+      qBaklavaC++;
+      qBaklava.textContent = qBaklavaC;
       
       updateCAmount();
     });
@@ -120,6 +125,8 @@ document.addEventListener('DOMContentLoaded', function() {
     increase6.addEventListener('click', function() {
       cAmount++;
       quantityE6++;
+      qPieC++;
+      qPie.textContent=qPieC;
       
       updateCAmount();
     });
@@ -127,6 +134,8 @@ document.addEventListener('DOMContentLoaded', function() {
     increase7.addEventListener('click', function() {
       cAmount++;
       quantityE7++;
+      qCakeC++;
+      qCake.textContent = qCakeC;
       
       updateCAmount();
     });
@@ -134,6 +143,8 @@ document.addEventListener('DOMContentLoaded', function() {
     increase8.addEventListener('click', function() {
       cAmount++;
       quantityE8++;
+      qBrownieC++;
+      qBrownie.textContent = qBrownieC;
       
       updateCAmount();
     });
@@ -141,6 +152,8 @@ document.addEventListener('DOMContentLoaded', function() {
     increase9.addEventListener('click', function() {
       cAmount++;
       quantityE9++;
+      qCottaC++;
+      qCotta.textContent=qCottaC;
       
       updateCAmount();
     });
@@ -149,8 +162,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE1 > 0) {
         cAmount--;
         quantityE1--;
-        qWaffleC--;
-        qWaffle.textContent = qWaffleC;
+        // qWaffleC--;
+        qWaffle.textContent = quantityE1;
         updateCAmount();
       }
     });
@@ -169,6 +182,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE3 > 0) {
         cAmount--;
         quantityE3--;
+        qMacaronC--;
+        qMacaron.textContent = qMacaronC;
+
         updateCAmount();
       }
     });
@@ -177,6 +193,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE4 > 0) {
         cAmount--;
         quantityE4--;
+        qTiramisuC--;
+        qTiramisu.textContent = qTiramisuC;
+
         updateCAmount();
       }
     });
@@ -185,6 +204,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE5 > 0) {
         cAmount--;
         quantityE5--;
+        qBaklavaC--;
+        qBaklava.textContent = qBaklavaC;
+
         updateCAmount();
       }
     });
@@ -193,6 +215,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE6 > 0) {
         cAmount--;
         quantityE6--;
+        qPieC--;
+        qPie.textContent=qPieC;
+
         updateCAmount();
       }
     });
@@ -201,6 +226,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE7 > 0) {
         cAmount--;
         quantityE7--;
+        qCakeC--;
+        qCake.textContent = qCakeC;
+
         updateCAmount();
       }
     });
@@ -209,6 +237,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE8 > 0) {
         cAmount--;
         quantityE8--;
+        qBrownieC--;
+        qBrownie.textContent = qBrownieC;
+
         updateCAmount();
       }
     });
@@ -217,6 +248,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if (quantityE9 > 0) {
         cAmount--;
         quantityE9--;
+        qCottaC--;
+        qCotta.textContent=qCottaC;
+
         updateCAmount();
       }
     });
@@ -233,30 +267,79 @@ document.addEventListener('DOMContentLoaded', function() {
       quantity8.textContent = quantityE8;
       quantity9.textContent = quantityE9;
       if (cAmount > 0) {
-        // ordersE.style.display = 'block';
-        //  waffle.style.display='block'; // i think its appearing but with no extra styles
-        //  brulee.style.display='block';
         emptyCart.style.display = 'none';
+        results.style.display='block';
       } else {
-        // ordersE.style.display = 'none';
-        waffle.style.display='none';
-        brulee.style.display='none';
-        macaron.style.display='none';
-        tiramisu.style.display = 'none';
-        baklava.style.display = 'none';
-        pie.style.display = 'none';
-        cake.style.display = 'none';
-        brownie.style.display = 'none';
-        cotta.style.display = 'none';
+
+        results.style.display = 'none';
         emptyCart.style.display = 'block';
       }
 
-      // if(quantityE1 > 0){
-      //   waffle.style.display= 'block';
-      // }
+      if(quantityE1 > 0){
+        waffle.style.cssText="display:block; display:flex; font-size:17px; align-items: center; width:90%; border-bottom:1px solid black; padding-bottom:15px; padding-top:12px;"      
+      }
+      else{
+        waffle.style.display='none';
+      }
+      if(quantityE2 > 0){
+        brulee.style.cssText="display:block; display:flex; font-size:17px; align-items: center; width:90%; border-bottom:1px solid black; padding-bottom:15px; padding-top:12px;"      
+      }
+      else{
+        brulee.style.display='none';
+      }
+      if(quantityE3 > 0){
+        macaron.style.cssText="display:block; display:flex; font-size:17px; align-items: center; width:90%; border-bottom:1px solid black; padding-bottom:15px; padding-top:12px;"      
+      }
+      else{
+        macaron.style.display='none';
+      }
+      if(quantityE4 > 0){
+        tiramisu.style.cssText="display:block; display:flex; font-size:17px; align-items: center; width:90%; border-bottom:1px solid black; padding-bottom:15px; padding-top:12px;"      
+      }
+      else{
+        tiramisu.style.display='none';
+      }
+      if(quantityE5 > 0){
+        baklava.style.cssText="display:block; display:flex; font-size:17px; align-items: center; width:90%; border-bottom:1px solid black; padding-bottom:15px; padding-top:12px;"      
+      }
+      else{
+        baklava.style.display='none';
+      }
+      if(quantityE6 > 0){
+        pie.style.cssText="display:block; display:flex; font-size:17px; align-items: center; width:90%; border-bottom:1px solid black; padding-bottom:15px; padding-top:12px;"      
+      }
+      else{
+        pie.style.display='none';
+      }
+      if(quantityE7 > 0){
+        cake.style.cssText="display:block; display:flex; font-size:17px; align-items: center; width:90%; border-bottom:1px solid black; padding-bottom:15px; padding-top:12px;"      
+      }
+      else{
+        cake.style.display='none';
+      }
+      if(quantityE8 > 0){
+        brownie.style.cssText="display:block; display:flex; font-size:17px; align-items: center; width:90%; border-bottom:1px solid black; padding-bottom:15px; padding-top:12px;"      
+      }
+      else{
+        brownie.style.display='none';
+      }
+      if(quantityE9 > 0){
+        cotta.style.cssText="display:block; display:flex; font-size:17px; align-items: center; width:90%; border-bottom:1px solid black; padding-bottom:15px; padding-top:12px;"      
+      }
+      else{
+        cotta.style.display='none';
+      }
+      
 
     }
 
+    function calculations(){
+      const price1 = document.getElementById('price');
+
+
+      let cost1 = 6.50;
+
+    }
 
   });
   
