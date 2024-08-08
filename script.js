@@ -447,6 +447,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
       updateCAmount();
     }
+    
+    //declaring variables first to pass data   
+    const confirmQ1 = document.getElementById('confirmquantity1');
+    const confirmP1 = document.getElementById('confirmPrice1');
+    const confirmQ2 = document.getElementById('confirmquantity2');
+    const confirmP2 = document.getElementById('confirmPrice2');
+    const confirmQ3 = document.getElementById('confirmquantity3');
+    const confirmP3 = document.getElementById('confirmPrice3');
+    const confirmQ4 = document.getElementById('confirmquantity4');
+    const confirmP4 = document.getElementById('confirmPrice4');
+    const confirmQ5 = document.getElementById('confirmquantity5');
+    const confirmP5 = document.getElementById('confirmPrice5');
+    const confirmQ6 = document.getElementById('confirmquantity6');
+    const confirmP6 = document.getElementById('confirmPrice6');
+    const confirmQ7 = document.getElementById('confirmquantity7');
+    const confirmP7 = document.getElementById('confirmPrice7');
+    const confirmQ8 = document.getElementById('confirmquantity8');
+    const confirmP8 = document.getElementById('confirmPrice8');
+    const confirmQ9 = document.getElementById('confirmquantity9');
+    const confirmP9 = document.getElementById('confirmPrice9');
 
+    // passing data after hitting confirm
+    const confirmBtn = document.getElementById('confirm');
+    confirmBtn.addEventListener('click', function(){
+        confirmQ1.textContent = quantityE1;
+        confirmP1.textContent = quantityE1 * 6.50; // for some reason passing the total1 value doesnt work, im assuming its ucz of diff functions
+        confirmQ2.textContent = quantityE2;
+        confirmP2.textContent = quantityE2 * 7.00;
+        confirmQ3.textContent = quantityE3;
+        confirmP3.textContent = quantityE3 * 8.00;
+        confirmQ4.textContent = quantityE4;
+        confirmP4.textContent = quantityE4 * 5.50;
+        confirmQ5.textContent = quantityE5;
+        confirmP5.textContent = quantityE5 * 4.00;
+        confirmQ6.textContent = quantityE6;
+        confirmP6.textContent = quantityE6 * 5.00;
+        confirmQ7.textContent = quantityE7;
+        confirmP7.textContent = quantityE7 * 4.50;
+        confirmQ8.textContent = quantityE8;
+        confirmP8.textContent = quantityE8 * 5.50;
+        confirmQ9.textContent = quantityE9;
+        confirmP9.textContent = quantityE9 * 6.50;
+    });
+
+    const refresh = document.getElementById('refresh');
+    refresh.addEventListener('click', function(){
+        window.parent.location = window.parent.location.href;
+    })
   });
   

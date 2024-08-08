@@ -214,24 +214,6 @@ body{
     padding-top:10px;
 }
 
-/* .CartTiramisu,
-.CartWaffle,
-.CartCreme,
-.CartMacaron,
-.CartBaklava,
-.CartPie,
-.CartCake,
-.CartBrownie,
-.CartCotta{
-    display:flex;
-    font-size:17px;
-    align-items: center;
-    width:90%;
-    border-bottom:1px solid black;
-    padding-bottom:15px;
-} */
-
-
 .cancel{
     display: flex;
     align-items: center;
