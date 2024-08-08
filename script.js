@@ -467,28 +467,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const confirmP8 = document.getElementById('confirmPrice8');
     const confirmQ9 = document.getElementById('confirmquantity9');
     const confirmP9 = document.getElementById('confirmPrice9');
+    const bruv = document.getElementById('bruuh'); //total price in popup
 
     // passing data after hitting confirm
     const confirmBtn = document.getElementById('confirm');
     confirmBtn.addEventListener('click', function(){
         confirmQ1.textContent = quantityE1;
-        confirmP1.textContent = quantityE1 * 6.50; // for some reason passing the total1 value doesnt work, im assuming its ucz of diff functions
+        confirmP1.textContent = price1.textContent;
         confirmQ2.textContent = quantityE2;
-        confirmP2.textContent = quantityE2 * 7.00;
+        confirmP2.textContent = price2.textContent;
         confirmQ3.textContent = quantityE3;
-        confirmP3.textContent = quantityE3 * 8.00;
+        confirmP3.textContent = price3.textContent;
         confirmQ4.textContent = quantityE4;
-        confirmP4.textContent = quantityE4 * 5.50;
+        confirmP4.textContent = price4.textContent;
         confirmQ5.textContent = quantityE5;
-        confirmP5.textContent = quantityE5 * 4.00;
+        confirmP5.textContent = price5.textContent;
         confirmQ6.textContent = quantityE6;
-        confirmP6.textContent = quantityE6 * 5.00;
+        confirmP6.textContent = price6.textContent;
         confirmQ7.textContent = quantityE7;
-        confirmP7.textContent = quantityE7 * 4.50;
+        confirmP7.textContent = price7.textContent;
         confirmQ8.textContent = quantityE8;
-        confirmP8.textContent = quantityE8 * 5.50;
+        confirmP8.textContent = price8.textContent;
         confirmQ9.textContent = quantityE9;
-        confirmP9.textContent = quantityE9 * 6.50;
+        confirmP9.textContent = price9.textContent;
+        bruv.textContent = total.textContent;
     });
 
     const refresh = document.getElementById('refresh');
