@@ -469,9 +469,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const confirmP9 = document.getElementById('confirmPrice9');
     const bruv = document.getElementById('bruuh'); //total price in popup
 
-    // passing data after hitting confirm
+    // passing data after hitting confirm and showing popup
+    const popup = document.getElementById('overlapping');
     const confirmBtn = document.getElementById('confirm');
     confirmBtn.addEventListener('click', function(){
+        popup.style.cssText = "position: fixed; z-index: 100;";
         confirmQ1.textContent = quantityE1;
         confirmP1.textContent = price1.textContent;
         confirmQ2.textContent = quantityE2;
@@ -497,5 +499,6 @@ document.addEventListener('DOMContentLoaded', function() {
     refresh.addEventListener('click', function(){
         window.parent.location = window.parent.location.href;
     })
+
   });
   

@@ -12,12 +12,16 @@
     margin-right:22%;
     width:40px;
     height:40px;
+    /* background-color: white; */
 }
 
 .overlapping .title{
-    width:25%;
-    padding-bottom:20px;
-    padding-top:15px;
+    /* width:25%; */
+    margin-right:14%;
+    /* padding-bottom:20px; */
+    color:black;
+    /* background-color: white; */
+    /* padding-top:15px; */
 }
 
 .confirmation_list{

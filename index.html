@@ -9,6 +9,129 @@
 </head>
 <body>
     <div class="parent">
+        <div class="overlapping" id="overlapping" style="display:none;">
+            <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/icon-order-confirmed.svg" id="confirmed">
+            <div class="title">
+                <p style="font-size:23px; font-weight: 700; background-color: white; border-radius: 7px; padding:4px; margin-top:5px; margin-bottom:7px;">Order Confirmed</p>
+                <p style="padding-top:5px; opacity:0.4; background-color: white; border-radius: 7px; padding:4px; margin-top:5px; margin-bottom:7px;">we hope you enjoy your food</p>
+            </div>
+            <div class="confirmation_list">
+                <div class="confirmationWaffle">
+                    <div class="confirmImg">
+                        <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-waffle-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="confirmItem">
+                        <span id="confirmTitle">Waffle</span>
+                       <p><span id="confirmquantity1"></span>x <span>@ $6.50</span></p>
+                    </div>
+                    <div class="confirmPrice">
+                        $<span id="confirmPrice1"></span>
+                    </div>
+                </div>
+                <div class="confirmationCreme">
+                    <div class="confirmImg">
+                        <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-creme-brulee-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="confirmItem">
+                        <span id="confirmTitle">Creme Brulee</span>
+                       <p><span id="confirmquantity2"></span>x <span>@ $7.00</span></p>
+                    </div>
+                    <div class="confirmPrice">
+                        $<span id="confirmPrice2"></span>
+                    </div>
+                </div>
+                <div class="confirmationMacarono">
+                    <div class="confirmImg">
+                        <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-macaron-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="confirmItem">
+                        <span id="confirmTitle">Macaron</span>
+                       <p><span id="confirmquantity3"></span>x <span>@ $8.00</span></p>
+                    </div>
+                    <div class="confirmPrice">
+                        $<span id="confirmPrice3"></span>
+                    </div>
+                </div>
+                <div class="confimationTiramisu">
+                    <div class="confirmImg">
+                        <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-tiramisu-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="confirmItem">
+                        <span id="confirmTitle">Classic Tiramisu</span>
+                       <p><span id="confirmquantity4"></span>x <span>@ $5.50</span></p>
+                    </div>
+                    <div class="confirmPrice">
+                        $<span id="confirmPrice4"></span>
+                    </div>
+                </div>
+                <div class="confimationBaklava">
+                    <div class="confirmImg">
+                        <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-baklava-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="confirmItem">
+                        <span id="confirmTitle">Pistachio Baklava</span>
+                       <p><span id="confirmquantity5"></span>x <span>@ $4.00</span></p>
+                    </div>
+                    <div class="confirmPrice">
+                        $<span id="confirmPrice5"></span>
+                    </div>
+                </div>
+                <div class="confirmationPie">
+                    <div class="confirmImg">
+                        <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-meringue-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="confirmItem">
+                        <span id="confirmTitle">Lemon merigune pie</span>
+                       <p><span id="confirmquantity6"></span>x <span>@ $5.50</span></p>
+                    </div>
+                    <div class="confirmPrice">
+                        $<span id="confirmPrice6"></span>
+                    </div>
+                </div>
+                <div class="confimationCake">
+                    <div class="confirmImg">
+                        <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-cake-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="confirmItem">
+                        <span id="confirmTitle">Red Velvet Cake</span>
+                       <p><span id="confirmquantity7"></span>x <span>@ $4.50</span></p>
+                    </div>
+                    <div class="confirmPrice">
+                        $<span id="confirmPrice7"></span>
+                    </div>
+                </div>
+                <div class="confirmationBrownie">
+                    <div class="confirmImg">
+                        <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-brownie-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="confirmItem">
+                        <span id="confirmTitle">Salted Caramel Brownie</span>
+                       <p><span id="confirmquantity8"></span>x <span>@ $5.50</span></p>
+                    </div>
+                    <div class="confirmPrice">
+                        $<span id="confirmPrice8"></span>
+                    </div>
+                </div>
+                <div class="confirmationCotta">
+                    <div class="confirmImg">
+                        <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-panna-cotta-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="confirmItem">
+                        <span id="confirmTitle">Vanilla Panna Cotta</span>
+                       <p><span id="confirmquantity9"></span>x <span>@ $6.50</span></p>
+                    </div>
+                    <div class="confirmPrice">
+                        $<span id="confirmPrice9"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="orderTotal">
+                <span style="padding-left:22px; font-size:17px; padding-right:200px;">Order Total</span> <span style="font-size: 20px; font-weight:700;">$<span id="bruuh"></span>
+            </div></span>
+            <div class="refresh">
+                <button type="button" id="refresh">Start New order</button>
+            </div>
+        </div>
         <div class="left">
             <div class="LTopLeft">
                 Dessert
@@ -367,129 +490,7 @@
             </div>
         </div>
     </div>
-    <div class="overlapping">
-        <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/icon-order-confirmed.svg" id="confirmed">
-        <div class="title">
-            <p style="font-size:23px; font-weight: 700;">Order Confirmed</p>
-            <p style="padding-top:5px; opacity:0.4;">we hope you enjoy your food</p>
-        </div>
-        <div class="confirmation_list">
-            <div class="confirmationWaffle">
-                <div class="confirmImg">
-                    <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-waffle-thumbnail.jpg" alt="">
-                </div>
-                <div class="confirmItem">
-                    <span id="confirmTitle">Waffle</span>
-                   <p><span id="confirmquantity1"></span>x <span>@ $6.50</span></p>
-                </div>
-                <div class="confirmPrice">
-                    $<span id="confirmPrice1"></span>
-                </div>
-            </div>
-            <div class="confirmationCreme">
-                <div class="confirmImg">
-                    <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-creme-brulee-thumbnail.jpg" alt="">
-                </div>
-                <div class="confirmItem">
-                    <span id="confirmTitle">Creme Brulee</span>
-                   <p><span id="confirmquantity2"></span>x <span>@ $7.00</span></p>
-                </div>
-                <div class="confirmPrice">
-                    $<span id="confirmPrice2"></span>
-                </div>
-            </div>
-            <div class="confirmationMacarono">
-                <div class="confirmImg">
-                    <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-macaron-thumbnail.jpg" alt="">
-                </div>
-                <div class="confirmItem">
-                    <span id="confirmTitle">Macaron</span>
-                   <p><span id="confirmquantity3"></span>x <span>@ $8.00</span></p>
-                </div>
-                <div class="confirmPrice">
-                    $<span id="confirmPrice3"></span>
-                </div>
-            </div>
-            <div class="confimationTiramisu">
-                <div class="confirmImg">
-                    <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-tiramisu-thumbnail.jpg" alt="">
-                </div>
-                <div class="confirmItem">
-                    <span id="confirmTitle">Classic Tiramisu</span>
-                   <p><span id="confirmquantity4"></span>x <span>@ $5.50</span></p>
-                </div>
-                <div class="confirmPrice">
-                    $<span id="confirmPrice4"></span>
-                </div>
-            </div>
-            <div class="confimationBaklava">
-                <div class="confirmImg">
-                    <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-baklava-thumbnail.jpg" alt="">
-                </div>
-                <div class="confirmItem">
-                    <span id="confirmTitle">Pistachio Baklava</span>
-                   <p><span id="confirmquantity5"></span>x <span>@ $4.00</span></p>
-                </div>
-                <div class="confirmPrice">
-                    $<span id="confirmPrice5"></span>
-                </div>
-            </div>
-            <div class="confirmationPie">
-                <div class="confirmImg">
-                    <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-meringue-thumbnail.jpg" alt="">
-                </div>
-                <div class="confirmItem">
-                    <span id="confirmTitle">Lemon merigune pie</span>
-                   <p><span id="confirmquantity6"></span>x <span>@ $5.50</span></p>
-                </div>
-                <div class="confirmPrice">
-                    $<span id="confirmPrice6"></span>
-                </div>
-            </div>
-            <div class="confimationCake">
-                <div class="confirmImg">
-                    <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-cake-thumbnail.jpg" alt="">
-                </div>
-                <div class="confirmItem">
-                    <span id="confirmTitle">Red Velvet Cake</span>
-                   <p><span id="confirmquantity7"></span>x <span>@ $4.50</span></p>
-                </div>
-                <div class="confirmPrice">
-                    $<span id="confirmPrice7"></span>
-                </div>
-            </div>
-            <div class="confirmationBrownie">
-                <div class="confirmImg">
-                    <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-brownie-thumbnail.jpg" alt="">
-                </div>
-                <div class="confirmItem">
-                    <span id="confirmTitle">Salted Caramel Brownie</span>
-                   <p><span id="confirmquantity8"></span>x <span>@ $5.50</span></p>
-                </div>
-                <div class="confirmPrice">
-                    $<span id="confirmPrice8"></span>
-                </div>
-            </div>
-            <div class="confirmationCotta">
-                <div class="confirmImg">
-                    <img src="product-list-with-cart-main/product-list-with-cart-main/assets/images/image-panna-cotta-thumbnail.jpg" alt="">
-                </div>
-                <div class="confirmItem">
-                    <span id="confirmTitle">Vanilla Panna Cotta</span>
-                   <p><span id="confirmquantity9"></span>x <span>@ $6.50</span></p>
-                </div>
-                <div class="confirmPrice">
-                    $<span id="confirmPrice9"></span>
-                </div>
-            </div>
-        </div>
-        <div class="orderTotal">
-            <span style="padding-left:22px; font-size:17px; padding-right:200px;">Order Total</span> <span style="font-size: 20px; font-weight:700;">$<span id="bruuh"></span>
-        </div></span>
-        <div class="refresh">
-            <button type="button" id="refresh">Start New order</button>
-        </div>
-    </div>
+
 </body>
 <script src="script.js"></script>
 </html>
