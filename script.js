@@ -469,10 +469,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const confirmP9 = document.getElementById('confirmPrice9');
     const bruv = document.getElementById('bruuh'); //total price in popup
 
+    const bruh1 = document.getElementById('confirmationWaffle');
+    const bruh2 = document.getElementById('confirmationCreme');
+    const bruh3 = document.getElementById('confirmationMacarono');
+    const bruh4 = document.getElementById('confimationTiramisu');
+    const bruh5 = document.getElementById('confimationBaklava');
+    const bruh6 = document.getElementById('confirmationPie');
+    const bruh7 = document.getElementById('confimationCake');
+    const bruh8 = document.getElementById('confirmationBrownie');
+    const bruh9 = document.getElementById('confirmationCotta');
+
     // passing data after hitting confirm and showing popup
     const popup = document.getElementById('overlapping');
     const confirmBtn = document.getElementById('confirm');
     confirmBtn.addEventListener('click', function(){
+        updateCAmount();
         popup.style.cssText = "position: fixed; z-index: 100;";
         confirmQ1.textContent = quantityE1;
         confirmP1.textContent = price1.textContent;
@@ -493,6 +504,35 @@ document.addEventListener('DOMContentLoaded', function() {
         confirmQ9.textContent = quantityE9;
         confirmP9.textContent = price9.textContent;
         bruv.textContent = total.textContent;
+
+        if(quantityE1==0){
+            bruh1.style.display='none';
+        }
+        if(quantityE2==0){
+            bruh2.style.display='none';
+        }
+        if(quantityE3==0){
+            bruh3.style.display='none';
+        }
+        if(quantityE4==0){
+            bruh4.style.display='none';
+        }
+        if(quantityE5==0){
+            bruh5.style.display='none';
+        }
+        if(quantityE6==0){
+            bruh6.style.display='none';
+        }
+        if(quantityE7==0){
+            bruh7.style.display='none';
+        }
+        if(quantityE8==0){
+            bruh8.style.display='none';
+        }
+        if(quantityE9==0){
+            bruh9.style.display='none';
+        }
+
     });
 
     const refresh = document.getElementById('refresh');

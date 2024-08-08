@@ -25,8 +25,9 @@
 }
 
 .confirmation_list{
-    height:250px;
+    height:auto;
     width:25%;
+    max-height:250px;
     overflow-y: auto;
     display:flex;
     flex-direction: column;
