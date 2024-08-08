@@ -43,15 +43,15 @@
     display: none;
   }
 
-.confirmationWaffle,
-.confirmationCreme,
-.confirmationMacarono,
-.confimationTiramisu,
-.confimationBaklava,
-.confirmationPie,
-.confimationCake,
-.confirmationBrownie,
-.confirmationCotta
+#confirmationWaffle,
+#confirmationCreme,
+#confirmationMacarono,
+#confimationTiramisu,
+#confimationBaklava,
+#confirmationPie,
+#confimationCake,
+#confirmationBrownie,
+#confirmationCotta
 {
     width:100%;
     display:flex;

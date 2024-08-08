@@ -127,11 +127,12 @@ body{
 }
 
 .cart{
-    margin-top:40px;
+    position:fixed;
+    margin-top:50px;
     display:flex;
     flex-direction: column;
     background-color: white;
-    width:69%;
+    width:26%;
     height:auto;
     border-radius: 7px;
 }
@@ -211,8 +212,14 @@ body{
 
 .orders{
     width:100%;
+    max-height:250px;
+    overflow-y: auto;
     padding-top:10px;
 }
+
+.orders::-webkit-scrollbar {
+    display: none;
+  }
 
 .cancel{
     display: flex;
